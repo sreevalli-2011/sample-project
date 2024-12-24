@@ -1,0 +1,359 @@
+/* Global styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Responsive design */
+  @media only screen and (max-width: 768px) {
+    /* Mobile styles here */
+  }
+  
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Tablet styles here */
+  }
+  
+  @media only screen and (min-width: 1025px) {
+    /* Desktop styles here */
+  }
+
+  .logo-text {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgba(0, 0, 255, 0.9);
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .banner {
+
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../assets/images/banner.jpg');
+    background-image: linear-gradient(to bottom, #808080 0%, rgba(0, 0, 255, 0.9) 50%, rgba(255, 255, 0, 0.2) 100%);
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+   animation: fade-in 2s ease-in-out;
+  }
+  
+  .banner-text {
+   
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  /* Animation */
+
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .fade-in-out {
+    animation: fadeInOut 2s infinite;
+  }
+  .form-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .thumbnail {
+    width: 50px; 
+    height: 50px;
+  
+  }
+
+  .feedback{
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color:#232323;
+    
+  }
+  .border-bottom {
+
+    border-bottom: 4px solid #211d1d;
+ 
+  }
+  
+  .button-container {
+    margin-bottom: 80px;
+   
+    
+  }
+
+  .forms-container {
+  display: flex;
+}
+
+.feedback-form {
+  flex: 60%;
+  padding-right: 15px; /* Optional: Adds some space between the two forms */
+}
+
+.right-aligned-form-container{
+
+  padding: 10px;
+  width: 400px;
+  height:800px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.right-aligned-form {
+  flex: 40%;
+
+}
+
+/* feeback form */
+.feedback-form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+
+}
+
+.feedback-form-title {
+  color: #007bff; /* Primary blue color */
+  font-weight: bold;
+  border-bottom: 2px solid #007bff; /* Blue border bottom */
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.feedback-form {
+  background: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.section-title {
+  color: #007bff; /* Primary blue color */
+  font-weight: bold;
+  border-bottom: 2px solid #007bff; /* Blue border bottom */
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.feedback-form-label {
+  color: #534f4f; 
+  font-weight: 500;
+ 
+}
+
+.form-check-input {
+  margin-top: 0.3rem;
+}
+
+.form-check-label {
+  margin-left: 5px;
+}
+
+.form-control {
+  border: 2px solid #007bff; /* Border color */
+  border-radius: 4px;
+}
+
+.btn-primary {
+  background-color: #007bff; /* Primary blue color */
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+.comment-section {
+  border: 2px solid #DBD6D6; 
+  padding: 25px;
+  border-radius: 8px;
+  width: 420px; 
+  height: 189px; 
+  margin-bottom: 20px; 
+  position: relative; 
+}
+
+.comment-section textarea {
+  border: 2px solid #989ea4; 
+  border-radius: 4px; 
+  height: calc(100% - 22px); 
+  width: calc(100% - 20px); 
+  box-sizing: border-box; 
+  padding: 10px; 
+  text-align: center;
+}
+
+.icon-container {
+  position: absolute;
+  right: 10px;
+  top: 93%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 10px; 
+}
+
+/* Icon styling */
+.icon-container i {
+  font-size: 20px; 
+  cursor: pointer;
+  color: #DBD6D6; 
+}
+
+.inner-border {
+  border: 2px solid #989ea4; /* Outer border for feedback section */
+  padding: 15px;
+  border-radius: 8px;
+   /* Light background color */
+}
+.star-rating-section {
+/* Black border */
+  padding: 10px;
+  width: 200px;
+  height: 50px;
+}
+
+.star-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 26px;
+}
+
+.star-item {
+  position: relative;
+}
+
+.star-label {
+  font-size: 20px;
+  color: #D3D3D3; /* Light gray color for stars */
+}
+
+.star-input:checked ~ .star-label {
+  color: #FFD700; /* Gold color when selected */
+}
+
+.form-container {
+  width: 100%;
+  max-width: 500px; /* Optional: set a max width for the form */
+  margin: 0 auto; /* Center the form */
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.back-button {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #007bff;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-group button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-group button:hover {
+  background-color: #0056b3;
+}
+.toggle-switch {
+  display: flex;
+  align-items: center;
+}
+
+.toggle-switch input[type="checkbox"] {
+  margin-right: 5px;
+}
+.underline {
+  border-bottom: 1px solid blue;
+  margin-top: 5px;
+  width: 100%;
+  position: relative;
+}
+.underline::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+
+.underline:hover::after {
+  background-color: blue;
+}
+
+.about-page {
+  text-align: center;
+}
+
+.about-page h1 {
+  margin-bottom: 20px;
+}
+
+.about-page p {
+  font-size: 18px;
+  color: #333;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+
+
+
+ 
